@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; user-scalable=0;" />
+    <title>JavaScript Interface</title>
+</head>
+<body style="background-color:#E6E6FA">
+<h1>JavaScript Interface</h1>
+<p id="mytext">JS view is controlled by Android code!!</p>
+<input type="button" value="Show Toast!" onClick="showJSToast('Toast to JS Interface!')" />
+<input type="button" value="Open Dialog" onClick="openAndroidDialog()" />
+<script language="javascript">
+   function showJSToast(toast) {
+       AndroidFunction.showToast(toast);
+   }
+
+   function openAndroidDialog() {
+       AndroidFunction.openAndroidDialog();
+   }
+
+   function callFromActivity(msg){
+ document.getElementById("mytext").innerHTML = msg;
+   }
+</script>
+
+</body>t
+</html>
